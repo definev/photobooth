@@ -40,7 +40,7 @@ class _OffscreenCompositor {
   final double targetAspectRatio;
 
   /// Left, Top, Right border size.
-  static const _frameBorderSize = 15;
+  static const _frameBorderSize = 30;
 
   Future<List<int>> composite() async {
     final layers =
@@ -62,7 +62,7 @@ class _OffscreenCompositor {
 
     /// Prepare image elements.
     final frameAssetPath = targetAspectRatio < 1
-        ? 'assets/assets/images/photo_frame_mobile_download.png'
+        ? 'assets/assets/images/photo_frame_portrait.png'
         : 'assets/assets/images/photo_frame_download.png';
     final frameImage = await HtmlImageLoader(frameAssetPath).loadImage();
 

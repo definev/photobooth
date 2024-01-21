@@ -103,6 +103,7 @@ class PhotoboothTheme {
       style: ElevatedButton.styleFrom(
         elevation: 0,
         backgroundColor: PhotoboothColors.blue,
+        foregroundColor: PhotoboothColors.white,
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(30)),
         ),
